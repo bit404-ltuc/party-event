@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Party event</title>
+ Ghaida
     <style>
 
         /* * {
@@ -11,40 +13,113 @@
 }
 .menu {
 
-}
-.menuitem {
+main
 
-}
-.main {
 
-}
-.right {
+    <link rel="stylesheet" href="css/categories.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-} */
-        
-        @media only screen and (max-width:800px) {
-            /* For tablets and PC: */
-            .main {
-                width: 80%;
-                padding: 0;
-            }
-            .right {
-                width: 100%;
-            }
+
+
+
+
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
         }
         
-        @media only screen and (max-width:500px) {
-            /* For mobile phones: */
-            .menu,
-            .main,
-            .right {
-                width: 100%;
-            }
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .swiper-container {
+            margin-top: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .swiper-container {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        #nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.637);
+            top: 0;
+            width: 100%;
+        }
+        
+        #nav ul li {
+            float: left;
+        }
+        
+        #nav ul li img {
+            margin-left: 20px;
+        }
+        
+        #nav ul li:nth-child(2) {
+            margin-left: 200px;
+        }
+        
+        #nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            margin-left: 100px;
+        }
+        
+        #nav ul li a:hover:not(.active) {
+            background-color: #111;
         }
     </style>
 </head>
 
+
 <body style="font-family:Verdana;">
+
 
 
 
@@ -53,20 +128,110 @@
         <!-- navbar and slider -->
 
 
-        <div class="main">
-            <!-- Connect with us -->
-        </div>
-
-        <div class="right">
-            <!-- texts -->
-        </div>
-    </div>
 
 
 
+        <body>
+            <div id="nav">
+                <ul>
+                    <li><img src="img/kisspng-lets-party-logo-bultman-drive-brand-party-decoration-box-5b31c0e5759a13.0261195815299873014817.png" alt="" srcset="" width="130px" height="50px"></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <!-- Swiper -->
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://www.imgworlds.com/wp-content/uploads/2020/02/Special-package-opt.jpg" alt="" id="slidimg1" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://www.brides.com/thmb/4jJS6bWOxag-wWs8Fs-ciyiHWNk=/3637x1900/filters:fill(auto,1)/fb-17fb02b1b414482eacef639472ac395c.jpg" alt="" id="slidimg2" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1577036421869-7c8d388d2123?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="" id="slidimg3" />
+                    </div>
 
-</body>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div>
+                <div class="container">
+                    <div class="card">
+                        <h3>Birthday</h3>
+                        <div class="box">
+                            <div class="content">
+                                <img src="https://images.unsplash.com/photo-1608790672275-309c02d888ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80" alt="" srcset="">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
 
-</html>
+                    <div class="card">
+                        <h3>Garduation</h3>
+                        <div class="box">
+                            <div class="content">
+                                <img src="https://images.unsplash.com/photo-1593985887762-955dccf2b71e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1534&q=80" alt="" srcset="">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+
+                        <h3>Married</h3>
+                        <div class="box">
+                            <div class="content">
+                                <img src="https://images.unsplash.com/photo-1606490194859-07c18c9f0968?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="" srcset="">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Textmain">
+                <h1 id="Text1">Party Event</h1>
+
+                <p id="Text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex debitis quaerat, dicta praesentium nihil soluta mollitia sunt totam ad vel. Qui assumenda sunt corrupti itaque neque, reiciendis deserunt quod rerum.</p>
+
+                <p id="Text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ratione fugiat sed dignissimos nisi at autem! Officia delectus fugit quidem dolore natus ea nesciunt aliquid accusantium dolorem est. Doloribus, ipsa.</p>
+
+                <p id="Text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur tempora similique perspiciatis quasi a veniam earum cupiditate! Perspiciatis quam itaque minus eligendi, natus repudiandae fugit molestiae perferendis, magnam, consectetur
+                    architecto?
+                </p>
+
+            </div>
+
+            <!-- Swiper JS -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true,
+                    autoplay: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+            </script>
+        </body>
+
+
+
+
+
+
 
 
