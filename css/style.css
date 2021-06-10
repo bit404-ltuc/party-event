@@ -1,0 +1,119 @@
+.container {
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+.container .card {
+    position: relative;
+  }
+  
+  .container .card .cover {
+    width: 300px;
+    height: 300px;
+    transition: 0.5s;
+  }
+  
+  .container .card .cover.closed {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(200px);
+  }
+  
+  .container .card:hover .cover.closed {
+    transform: translateY(0);
+  }
+  
+  .container .card .cover.closed .card_content {
+    opacity: 0.8;
+    transition: 0.8s;
+    text-align: center;
+  }
+  
+  .container .card:hover .cover.closed .card_content {
+    opacity: 1;
+  }
+  
+ 
+  
+  .container .card .cover.closed h3 {
+    margin: 10px 0 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  .container .card .cover.open {
+    height: 300px;
+    position: relative;
+    background: white;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+  }
+  
+ 
+  
+  
+ 
+  .container .card:hover .cover.open {
+    transform: translateY(0);
+  }
+  
+  .card_button {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #343f56;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer;
+    transition: 100ms linear;
+  }
+  
+  .card_button a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+  .card_button:hover {
+    background: #5c6577;
+    transition: 100ms linear;
+  }  
+  .instagram {
+    background: #e1306c;
+  }
+  
+  .container .card:hover .cover.closed.instagram {
+    background: #ff6699;
+  
+    transform: rotate(3deg);
+  }
+ 
+  .facebook {
+    background: rgb(5, 133, 192);
+  }
+  
+  .container .card:hover .cover.closed.facebook {
+    background: rgb(5, 133, 192);
+  
+    transform: rotate(-2deg);
+  }
+  .whatsapp {
+    background: #0eb841;
+  }
+  
+  .container .card:hover .cover.closed.whatsapp {
+    background: #0eb841;
+  }
+  
