@@ -1,71 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Party event</title>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Demo styles -->
     <style>
-        /* * {
- 
-}
-.menu {
-
-}
-.menuitem {
-
-}
-.main {
-
-}
-.right {
-
-} */
-        
-        @media only screen and (max-width:800px) {
-            /* For tablets and PC: */
-            .main {
-                width: 80%;
-                padding: 0;
-            }
-            .right {
-                width: 100%;
-            }
+        html,
+        body {
+            position: relative;
+            height: 100%;
         }
         
-        @media only screen and (max-width:500px) {
-            /* For mobile phones: */
-            .menu,
-            .main,
-            .right {
-                width: 100%;
-            }
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .swiper-container {
+            margin-top: 42px;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .swiper-container {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        #nav {
+            position: fixed;
+        }
+        
+        #nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.637);
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        
+        #nav ul li {
+            float: left;
+        }
+        
+        #nav ul li img {
+            margin-left: 20px;
+        }
+        
+        #nav ul li:nth-child(2) {
+            margin-left: 200px;
+        }
+        
+        #nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            margin-left: 100px;
+        }
+        
+        #nav ul li a:hover:not(.active) {
+            background-color: #111;
         }
     </style>
 </head>
 
-<body style="font-family:Verdana;">
-
-
-
-
-    <div class="menu">
-        <!-- navbar and slider -->
-
-
-        <div class="main">
-            <!-- Connect with us -->
-        </div>
-
-        <div class="right">
-            <!-- texts -->
-        </div>
+<body>
+    <div id="nav">
+        <ul>
+            <li><img src="https://cdn.discordapp.com/attachments/852453775146483776/852480810368237568/c0ff1e6dbef040d39b639ec4b6d6ddcd.png" alt="" srcset="" width="40px" height="40px"></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
     </div>
+    <!-- Swiper -->
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="https://images.unsplash.com/photo-1562967005-a3c85514d3e9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://images.unsplash.com/photo-1607647074969-cc58ec404eb2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://images.unsplash.com/photo-1577036421869-7c8d388d2123?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="" />
+            </div>
 
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <p style="margin-top: 700px;">fdsfdfdfdfdsf</p>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-
-
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
-
-</html>
 
 </html>
