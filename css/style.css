@@ -769,3 +769,24 @@ nav ul li:hover {
 #slidimg3{
     height: 600px;
 }
+
+#Textmain {
+    background-color: rgba(0, 0, 0, 0.63)
+}
+
+#Textmain {
+    text-align: center;
+    margin: .5%;
+}
+
+#Text1 {
+    color: #cf009f;
+    font-size: xx-large;
+}
+
+#Text2 {
+    color: blanchedalmond;
+    font-size: medium;
+    text-align: justify;
+    
+}
