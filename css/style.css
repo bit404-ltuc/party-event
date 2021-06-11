@@ -751,8 +751,11 @@ button.swiper-pagination-bullet {
 }
 
 #Text1 {
-    color: #cf009f;
+    position: relative;
+    top: 20px;
+    color: #000000;
     font-size: xx-large;
+    text-align: center;
 }
 
 #Text2 {
@@ -822,7 +825,7 @@ button.swiper-pagination-bullet {
     grid-column: 1;
     font-size: 1.3rem;
     text-decoration: none;
-    margin-left: 230px;
+    margin-left: 135px;
     margin-top: 45px;
     position: absolute;
     color: #DCAE1D;
@@ -886,7 +889,7 @@ li a:hover::before {
 /* ----------------------footer */
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
-section {
+/* section {
     width: 100%;
     display: inline-block;
     background: #333;
@@ -895,7 +898,7 @@ section {
     font-size: 22px;
     font-weight: 700;
     text-decoration: underline;
-}
+} */
 
 .footer-distributed {
     background: #CAE4DB;
