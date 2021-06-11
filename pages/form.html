@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+  <nav id="navbar">
+    <div id="logo"> Party</div>
+    <div id="secondary-logo">Event</div>
+    <ul id="navbarList">
+        <li><a href="#"> About </a> </li>
+        <li><a href="#">Category</a> </li>
+        <li><a href="#">Reservation</a> </li>
+        <li><a href="#">About</a> </li>
+    </ul>
+</nav>
+
+    <div id='form'>
+    <form action="SEND ADDRESS" id="ft-form" method="POST" accept-charset="UTF-8">
+        <fieldset>
+          <legend>For Booking</legend>
+          <label>
+           full name
+            <input type="text" name="name" required>
+          </label>
+          <div class="two-cols">
+            <label>
+              Email address
+              <input type="email" name="email" required>
+            </label>
+            <label>
+              Phone number
+              <input type="tel" name="phone">
+            </label>
+            <label>
+                another number
+                <input type="tel" name="phone">
+              </label>
+          </div>
+       
+       
+         
+          <div class="two-cols">
+            <label>
+              Date
+              <input type="date" name="Appointment request" required>
+            </label>
+            <div class="inline">
+                <label for="time">Choose the right time to start the party</label>
+                <input list="times" name="time" id="time">
+                <datalist id="times">
+                  <option value="4:00pm-6:00pm">
+                  <option value="7:00pm-9:00pm">
+                  <option value="10:00pm-12:00am">
+                  <option value="12:00am-2:00am">
+                  <option value="another time">
+                </datalist>
+            </div>
+        </div>
+         
+         
+          <div class='inline'>
+            <label for="quantity">Attendance number:</label>
+            <input type="number"width='100' id="quantity" name="quantity" min="1" max="100">
+               
+          <h3>The type of service provided</h3>
+          <input type="radio" id="normal" name="provided" value="Normal">
+         <label for="normal">Normal</label>
+         <input type="radio" id="extra" name="provided" value="extra">
+         <label for="extra">Extra services</label>
+         <input type="radio" id="vip" name="provided" value="vip">
+         <label for="vip">VIP</label>
+        </div>
+          <h3>Confirmation requested by</h3>
+          
+          <div class="inline">
+            <label>
+              <input type="radio" name="Confirmation requested by" value="email" checked>
+              Email
+            </label>
+            <label>
+              <input type="radio" name="Confirmation requested by" value="phone">
+              Phone call
+            </label>
+          </div>
+        
+        <div class="btns">
+          <input type="text" name="_gotcha" value="" style="display:none;">
+          <input type="submit" value="Submit request">
+        </div>
+    </fieldset>
+      </form>
+    </div>
+
+    <footer class="footer-distributed">
+
+      <div class="footer-left">
+
+          <h3>Party<span>Event</span></h3>
+
+          <p class="footer-links">
+              <a href="#" class="link-1">Home</a>
+
+              <a href="#">Blog</a>
+
+              <a href="#">Pricing</a>
+
+              <a href="#">About</a>
+
+              <a href="#">Faq</a>
+
+              <a href="#">Contact</a>
+          </p>
+
+          <p class="footer-company-name">Hafla Team © 2021</p>
+      </div>
+
+      <div class="footer-center">
+
+          <div>
+              <i class="fa fa-map-marker"></i>
+              <p><span>Airport st</span> Amman , Jordan</p>
+          </div>
+
+          <div>
+              <i class="fa fa-phone"></i>
+              <p>+962.0000.00000</p>
+          </div>
+
+          <div>
+              <i class="fa fa-envelope"></i>
+              <p><a href="mailto:support@haflaltuc.com">support@haflaltuc.com</a></p>
+          </div>
+
+      </div>
+
+      <div class="footer-right">
+
+          <p class="footer-company-about">
+              <span>About the company</span> A company specialized in preparing and booking graduation, wedding or birthday parties
+          </p>
+
+          <div class="footer-icons">
+
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+              <a href="#"><i class="fa fa-github"></i></a>
+
+          </div>
+
+      </div>
+
+  </footer>
+
+    
+
+    
+</body>
+</html>
