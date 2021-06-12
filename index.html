@@ -5,7 +5,6 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Party event</title>
-
     <link rel="stylesheet" href="css/categories.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,77 +13,83 @@
 </head>
 
 
-<body style="font-family:Verdana;">
+<body>
 
 
     <nav id="navbar">
         <div id="logo"> Party</div>
         <div id="secondary-logo">Event</div>
         <ul id="navbarList">
-            <li><a href="#"> About </a> </li>
-            <li><a href="#">Category</a> </li>
-            <li><a href="#">Reservation</a> </li>
-            <li><a href="#">About</a> </li>
+            <li><a href="/"> Home </a> </li>
+            <li><a href="#category">Category</a> </li>
+            <li><a href="pages/partyhalls.html">Reservation</a> </li>
+            <li><a href="pages/aboutus.html">About</a> </li>
         </ul>
     </nav>
-    <!-- Swiper -->
-    <div class="swiper-container mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="https://www.imgworlds.com/wp-content/uploads/2020/02/Special-package-opt.jpg" alt="" id="slidimg1" />
-            </div>
-            <div class="swiper-slide">
-                <img src="https://www.brides.com/thmb/4jJS6bWOxag-wWs8Fs-ciyiHWNk=/3637x1900/filters:fill(auto,1)/fb-17fb02b1b414482eacef639472ac395c.jpg" alt="" id="slidimg2" />
-            </div>
-            <div class="swiper-slide">
-                <img src="https://images.unsplash.com/photo-1577036421869-7c8d388d2123?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="" id="slidimg3" />
-            </div>
+    <!-- Slider -->
 
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+    <div class="slider-container">
+        <div id="slider-number" class="slider-number"></div>
+        <img src="img/party-1.jpg" alt="">
+        <img src="img/party-2.jpg" alt="">
+        <img src="img/party-3.jpg" alt="">
+        <img src="img/party-4.jpg" alt="">
+        <img src="img/party-5.jpg" alt="">
+        <img src="img/party-6.jpg" alt="">
+        <img src="img/party-7.jpg" alt="">
+
+    </div>
+    <div class="slider-controls">
+        <span id="prev" class="prev">Previous</span>
+        <span id="indicators" class="indicators"></span>
+        <span id="next" class="next">Next</span>
+
     </div>
     <div>
-        <div class="container">
-            <div class="card">
-                <h3>Birthday</h3>
-                <div class="box">
-                    <div class="content">
-                        <img src="https://images.unsplash.com/photo-1608790672275-309c02d888ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80" alt="" srcset="">
-                        <a href="#">Read More</a>
+        <video autoplay muted loop id="myVideo">
+        <source src="img/video.mp4" type="video/mp4">
+      </video>
+        <div id="category">
+            <div class="container">
+                <div class="card">
+                    <h3>Birthday</h3>
+                    <div class="box">
+                        <div class="content">
+                            <img src="https://images.unsplash.com/photo-1608790672275-309c02d888ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80" alt="" srcset="">
+                            <a href="#">Read More</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card">
-                <h3>Garduation</h3>
-                <div class="box">
-                    <div class="content">
-                        <img src="https://images.unsplash.com/photo-1593985887762-955dccf2b71e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1534&q=80" alt="" srcset="">
-                        <a href="#">Read More</a>
+                <div class="card">
+                    <h3>Garduation</h3>
+                    <div class="box">
+                        <div class="content">
+                            <img src="https://images.unsplash.com/photo-1593985887762-955dccf2b71e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1534&q=80" alt="" srcset="">
+                            <a href="#">Read More</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card">
+                <div class="card">
 
-                <h3>Married</h3>
-                <div class="box">
-                    <div class="content">
-                        <img src="https://images.unsplash.com/photo-1606490194859-07c18c9f0968?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="" srcset="">
-                        <a href="#">Read More</a>
+                    <h3>weddings</h3>
+                    <div class="box">
+                        <div class="content">
+                            <img src="https://images.unsplash.com/photo-1606490194859-07c18c9f0968?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="" srcset="">
+                            <a href="#">Read More</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div style="width: 100%; height: 300px; position: relative;">
-        <p class="item-1">This is your last chance. After this, there is no turning back.</p>
+        <div id="text">
+            <p class="item-1">This is your last chance. After this, there is no turning back.</p>
 
-        <p class="item-2">You take the blue pill - the story ends, you wake up in your bed and believe whatever you want to believe.</p>
+            <p class="item-2">You take the blue pill - the story ends, you wake up in your bed and believe whatever you want to believe.</p>
 
-        <p class="item-3">You take the red pill - you stay in Wonderland and I show you how deep the rabbit-hole goes.</p>
+            <p class="item-3">You take the red pill - you stay in Wonderland and I show you how deep the rabbit-hole goes.</p>
+        </div>
     </div>
 
     <!-- Site footer -->
@@ -152,27 +157,7 @@
 
     </footer>
 
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            autoplay: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
-
+    <script src="js/main.js"></script>
 
 </body>
 
