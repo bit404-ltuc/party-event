@@ -29,26 +29,26 @@
 
 
     <div id='form' style="width: 50%;">
-        <form action="SEND ADDRESS" id="ft-form" method="POST" accept-charset="UTF-8">
+        <form action="SEND ADDRESS" id="booking" method="POST" accept-charset="UTF-8">
             <fieldset>
                 <legend>For Booking</legend>
                 <label>
          full name
-          <input class='inputFields' type="text" name="name" required>
+          <input class='inputFields' type="text" name="name" id="fullName" required>
         </label>
                 <div class="two-cols">
                     <label>
             Email address
-            <input class='inputFields' type="email" name="email" required>
+            <input class='inputFields' type="email" name="email" id="emailAddress" required>
           </label>
                     <br>
                     <label>
             Phone number
-            <input class='inputFields' type="tel" name="phone">
+            <input class='inputFields' type="tel" name="phone" id="phone1">
           </label>
                     <label>
               another number
-              <input class='inputFields'type="tel" name="phone">
+              <input class='inputFields'type="tel" name="phone" id="phone2">
             </label>
                 </div>
 
@@ -57,7 +57,7 @@
                 <div class="two-cols">
                     <label>
             Date
-            <input class='inputFields' type="date" name="Appointment request" required>
+            <input class='inputFields' type="date" name="Appointment request" id="date" required>
           </label>
                     <div class="inline">
                         <label for="time">Choose the right time to start the party</label>
@@ -102,7 +102,7 @@
 
 
                 <div class="btns">
-                    <input type="text" name="_gotcha" value="" style="display:none;">
+
                     <input type="submit" value="Submit request">
                 </div>
 
@@ -156,7 +156,7 @@
         </div>
 
     </footer>
-
+    <script src="../js/form.js"></script>
 </body>
 
 </html>
