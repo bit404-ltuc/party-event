@@ -270,7 +270,7 @@ body {
 
 #navbarList {
     display: grid;
-    grid-column: 2 ;
+    grid-column: 2;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center;
     list-style: none;
@@ -348,6 +348,7 @@ li a:hover::before {
     position: relative;
     right: 10px;
 }
+
 
 /* Footer links */
 
@@ -586,9 +587,10 @@ body .container .card .box .content a:hover {
 
 #text {
     width: 100%;
-    height: 300px;
+    height: 200px;
     position: relative;
     color: #fff;
+    margin-bottom: 15px;
 }
 
 .item-1,
@@ -669,101 +671,109 @@ body .container .card .box .content a:hover {
     }
 }
 
+#footer2 {
+    margin: 22px;
+    margin-top: 80px;
+    box-sizing: border-box;
+    height: 25%;
+    clear: both;
+    width: 100%;
+    height: 20%;
+    display: inline-block;
+}
 
-    
-    button {
-  
-      border: none;
-      outline: 0;
-      padding: 9px;
-      color: white;
-      background-color: rgba(23, 57, 92);
-      text-align: center;
-      cursor: pointer;
-      font-size: 20px;
-      border-radius: 8px;
-      width: 100%;
-      display: inline-block;
-  
-    }
-  
-    button a {
-      color: white;
-      text-decoration: none;
-      
-  
-    }
-    button:hover, a:hover {
-      opacity: 0.7;
-    }
-  
-    .flip-card {
-  
-      
-      background-color: transparent;
-      width: 200px;
-      height: 200px;
-      perspective: 1000px;
-      display: inline-block;
+#footer2 .card {
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 200px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    padding: 0px;
+    margin: 30px;
+    display: inline-block;
+}
 
-    }
-    
-    .flip-card-inner {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      transition: transform 0.6s;
-      transform-style: preserve-3d;
-      box-shadow: 0 4px 8px 0 rgba(3, 3, 3, 0.2);
-  
-    
-    }
-    
-    .flip-card:hover .flip-card-inner {
-      transform: rotateY(180deg);
-    }
-    
-    .flip-card-front, .flip-card-back {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-      background-color:white;
-      height: 215px;  
-  
-  
-      
-    }
-    #p{
-      font-size: small;
-      text-align: justify;
-      padding: 2px;
-    }
-    
-  
-    
-    .flip-card-back {
-      background-color: #c6f5f0;
-      color: rgb(12, 12, 12);
-      transform: rotateY(180deg);
-      text-align: center;
-      padding: 15px;
+button {
+    margin-bottom: 0;
+    border: none;
+    outline: 0;
+    padding: 9px;
+    color: white;
+    background-color: rgba(23, 57, 92);
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover,
+a:hover {
+    opacity: 0.7;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 220px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(3, 3, 3, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: white;
+    height: 215px;
+}
+
+#p {
     font-size: small;
-  
-  }
-   
-   #img{
-     padding: 25px;
-       border-radius: 100%;
-   }
-    
-    #name {
-  
-        font-size: large;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
+    text-align: justify;
+    padding: 2px;
+}
+
+
+/* .flip-card-front {} */
+
+.flip-card-back {
+    background-color: rgb(239, 183, 88);
+    color: rgb(255, 255, 255);
+    transform: rotateY(180deg);
+    text-align: center;
+    padding: 15px;
+    font-size: small;
+}
+
+#img {
+    padding: 25px;
+    border-radius: 100%;
+}
+
 
       .blockcard{
       
@@ -804,4 +814,9 @@ body .container .card .box .content a:hover {
         position: relative;
         
     }
-    
+
+#name {
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
