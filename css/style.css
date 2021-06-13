@@ -672,6 +672,9 @@ body .container .card .box .content a:hover {
 }
 
 
+
+/* card profile */
+
 #footer2 {
     margin: 22px;
     margin-top: 80px;
@@ -775,6 +778,47 @@ a:hover {
     padding: 25px;
     border-radius: 100%;
 }
+
+
+      .blockcard{
+      
+      display: flex;
+    flex-direction: row;
+     
+      }
+      article{
+        font-family: 'Noto Sans', sans-serif;
+        box-sizing: border-box;
+        border-style: ridge;
+        width: 75%;
+        margin: 40px;
+        padding: 20px;
+        background-color:rgba(149, 223, 215, 0.5);
+        color: #00303F;
+      }
+      .inputFields {
+        margin: 10px 0;
+        font-size: 16px;
+        padding: 10px;
+        width: 250px;
+        border: 1px solid rgba(10, 180, 180, 1);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background: rgba(20, 20, 20, .2);
+        color: white;
+        outline: none;
+      }
+      .book {
+        
+        width: 800px;
+        height: 450px;
+       
+        display: flex;
+        color: rgb(5, 5, 5);
+        position: relative;
+        
+    }
 
 #name {
     font-size: large;
