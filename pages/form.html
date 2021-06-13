@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  
+
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
+
 <body>
+
 
   <header>
     <nav id="navbar">
@@ -30,43 +33,46 @@
       <fieldset>
         <legend style="font-size: 20px;font-family:Georgia, 'Times New Roman', Times, serif;">For Booking</legend>
         <label>
-         full name
+       Full Name :
           <input class='inputFields' type="text" name="name" required>
         </label>
-        <div class="two-cols">
-          <label>
+                <div class="two-cols">
+                    <label>
             Email address
             <input class='inputFields' type="email" name="email" required>
           </label>
-          <br>
-          <label>
+                    <br>
+                    <label>
             Phone number
             <input class='inputFields' type="tel" name="phone">
           </label>
+
           <br>
           <label>
+
               another number
               <input class='inputFields'type="tel" name="phone">
             </label>
-        </div>
-     
-     
-       
-        <div class="two-cols">
-          <label>
+                </div>
+
+
+
+                <div class="two-cols">
+                    <label>
             Date
             <input class='inputFields' type="date" name="Appointment request" required>
           </label>
-          <div class="inline">
-              <label for="time">Choose the right time to start the party</label>
-              <input class='inputFields' list="times" name="time" id="time">
-              <datalist id="times">
+                    <div class="inline">
+                        <label for="time">Choose the right time to start the party</label>
+                        <input class='inputFields' list="times" name="time" id="time">
+                        <datalist id="times">
                 <option value="4:00pm-6:00pm">
                 <option value="7:00pm-9:00pm">
                 <option value="10:00pm-12:00am">
                 <option value="12:00am-2:00am">
                 <option value="another time">
               </datalist>
+
            </div>
       </div>
        
@@ -89,14 +95,30 @@
         
         <div class="inline">
           <label>
+
             <input   type="radio" name="Confirmation requested by" value="email" checked>
             Email
           </label>
-          <label>
+                    <label>
             <input  type="radio" name="Confirmation requested by" value="phone">
             Phone call
           </label>
-        </div>
+                </div>
+
+
+                <div class="btns">
+                    <input type="text" name="_gotcha" value="" style="display:none;">
+                    <input type="submit" value="Submit request" class="submit">
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+
+
+
+    
+
       
       <div class="btns">
         <input  type="text" name="_gotcha" value="" style="display:none;">
@@ -146,20 +168,11 @@
   </div>
 
 
-  <div class="footerright">
-      <p class="companyabout">
-          <span>About the company</span> A company specialized in preparing and booking graduation, wedding or birthday parties
-      </p>
-
-      <div class="footer-icons">
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-          <a href="#"><i class="fa fa-github"></i></a>
-      </div>
-  </div>
+  
 
   </footer>
     
+
 </body>
+
 </html>
