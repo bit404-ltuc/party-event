@@ -804,7 +804,7 @@ a:hover {
         border-left: none;
         border-right: none;
         background: rgba(20, 20, 20, .2);
-        color: white;
+        color: black;
         outline: none;
       }
       .book {
@@ -817,6 +817,54 @@ a:hover {
         position: relative;
         
     }
+
+    /* style form */
+    .btns{
+            float:right;
+            border: none;
+            text-align: center;
+            padding: 16px 32px;
+            font-size: 20px;
+            margin: 4px 2px;
+            cursor: pointer;        
+    }
+    .submit{
+        background-color: rgba(0, 150, 136, 0.5); 
+        width : 300;
+        height: 300%;
+        padding: 16px 32px;
+        font-size: 20px;
+    }
+    section{
+        width: 500px;
+        height: 450px;
+        left:699px;
+       
+        color: rgb(5, 5, 5);
+        right: 280px;
+        position: absolute;
+   top: 0px;
+   margin-top:100px;
+    
+}
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative; 
+    background-color:rgba(0, 150, 136, 0.5);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+label{
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    color: rgba(23, 57, 92);
+}
 
 #name {
     font-size: large;

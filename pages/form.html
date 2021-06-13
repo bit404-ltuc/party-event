@@ -14,26 +14,26 @@
 
 <body>
 
-    <header>
-        <nav id="navbar">
-            <div id="logo"> Party</div>
-            <div id="smalllogo">Event</div>
-            <ul id="navbarList">
-                <li><a href="../index.html"> Home </a> </li>
-                <li><a href="../index.html#category">Category</a> </li>
-                <li><a href="partyhalls.html">Partyhalls</a> </li>
-                <li><a href="aboutus.html">About</a> </li>
-            </ul>
-        </nav>
-    </header>
 
+  <header>
+    <nav id="navbar">
+        <div id="logo"> Party</div>
+        <div id="smalllogo">Event</div>
+        <ul id="navbarList">
+            <li><a href="/"> Home </a> </li>
+            <li><a href="#category">Category</a> </li>
+            <li><a href="pages/partyhalls.html">Reservation</a> </li>
+            <li><a href="pages/aboutus.html">About</a> </li>
+        </ul>
+    </nav>
+</header>
 
-    <div id='form' style="width: 50%;">
-        <form action="SEND ADDRESS" id="ft-form" method="POST" accept-charset="UTF-8">
-            <fieldset>
-                <legend>For Booking</legend>
-                <label>
-         full name
+  <div id='form' style="width: 50%;">
+  <form action="SEND ADDRESS" id="ft-form" method="POST" accept-charset="UTF-8">
+      <fieldset>
+        <legend style="font-size: 20px;font-family:Georgia, 'Times New Roman', Times, serif;">For Booking</legend>
+        <label>
+       Full Name :
           <input class='inputFields' type="text" name="name" required>
         </label>
                 <div class="two-cols">
@@ -46,7 +46,10 @@
             Phone number
             <input class='inputFields' type="tel" name="phone">
           </label>
-                    <label>
+
+          <br>
+          <label>
+
               another number
               <input class='inputFields'type="tel" name="phone">
             </label>
@@ -69,28 +72,30 @@
                 <option value="12:00am-2:00am">
                 <option value="another time">
               </datalist>
-                    </div>
-                </div>
 
-                <div class='inline'>
-                    <label for="quantity">Attendance number:</label>
-                    <input class='inputFields' type="number" width='100' id="quantity" name="quantity" min="1" max="100">
+           </div>
+      </div>
+       
+        <div class='inline'>
+          <label for="quantity">Attendance number:</label>
+          <input class='inputFields' type="number"width='100' id="quantity" name="quantity" min="1" max="100">
+     
+         
+        <h3>The type of service provided</h3>
+        <input  type="radio" id="normal" name="provided" value="Normal">
+       <label for="normal">Normal</label>
+       <input  type="radio" id="extra" name="provided" value="extra">
+       <label for="extra">Extra services</label>
+       <input type="radio" id="vip" name="provided" value="vip">
+       <label for="vip">VIP</label>
+      </div>
+    <br>
+      
+      <h3>Confirmation requested by</h3>
+        
+        <div class="inline">
+          <label>
 
-
-                    <h3>The type of service provided</h3>
-                    <input type="radio" id="normal" name="provided" value="Normal">
-                    <label for="normal">Normal</label>
-                    <input type="radio" id="extra" name="provided" value="extra">
-                    <label for="extra">Extra services</label>
-                    <input type="radio" id="vip" name="provided" value="vip">
-                    <label for="vip">VIP</label>
-                </div>
-
-
-                <h3>Confirmation requested by</h3>
-
-                <div class="inline">
-                    <label>
             <input   type="radio" name="Confirmation requested by" value="email" checked>
             Email
           </label>
@@ -103,7 +108,7 @@
 
                 <div class="btns">
                     <input type="text" name="_gotcha" value="" style="display:none;">
-                    <input type="submit" value="Submit request">
+                    <input type="submit" value="Submit request" class="submit">
                 </div>
 
             </fieldset>
@@ -112,50 +117,61 @@
 
 
 
-    <footer class="mainfooter">
-        <div class="footerleft">
-            <h3>Party <span>Event</span></h3>
-            <p class="footer-links">
-                <a href="/" class="link-1">Home</a>
-                <a href="#category">Category</a>
-                <a href="pages/partyhalls.html">Reservation</a>
-                <a href="pages/aboutus.html">About</a>
-            </p>
-            <p class="copyright">Hafla Team © 2021</p>
-        </div>
+    
 
-        <div class="footercenter">
-            <div>
-                <i class="fa fa-map-marker"></i>
-                <p><span>Airport st</span> Amman , Jordan</p>
-            </div>
+      
+      <div class="btns">
+        <input  type="text" name="_gotcha" value="" style="display:none;">
+        <input class="submit"  type="submit" style="background-color: rgba(0, 150, 136, 0.5); width : 300;
+        height: 300%;" value="Submit request">
+      </div>
+    
+  </fieldset>
+  </form>
+  </div>
+<section>
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+  when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+  It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
+  essentially unchanged. 
+   
+</section>
 
-            <div>
-                <i class="fa fa-phone"></i>
-                <p>+962.0000.00000</p>
-            </div>
+<footer class="mainfooter">
+  <div class="footerleft">
+      <h3>Party <span>Event</span></h3>
+      <p class="footer-links">
+          <a href="/" class="link-1">Home</a>
+          <a href="#category">Category</a>
+          <a href="pages/partyhalls.html">Reservation</a>
+          <a href="pages/aboutus.html">About</a>
+      </p>
+      <p class="copyright">Hafla Team © 2021</p>
+  </div>
 
-            <div>
-                <i class="fa fa-envelope"></i>
-                <p><a href="mailto:support@haflaltuc.com">support@haflaltuc.com</a></p>
-            </div>
-        </div>
+  <div class="footercenter">
+      <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Airport st</span> Amman , Jordan</p>
+      </div>
+
+      <div>
+          <i class="fa fa-phone"></i>
+          <p>+962.0000.00000</p>
+      </div>
+
+      <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@haflaltuc.com">support@haflaltuc.com</a></p>
+      </div>
+  </div>
 
 
-        <div class="footerright">
-            <p class="companyabout">
-                <span>About the company</span> A company specialized in preparing and booking graduation, wedding or birthday parties
-            </p>
+  
 
-            <div class="footer-icons">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-                <a href="#"><i class="fa fa-github"></i></a>
-            </div>
-        </div>
-
-    </footer>
+  </footer>
+    
 
 </body>
 
