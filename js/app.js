@@ -82,4 +82,3 @@ function createCard() {
     cc.appendChild(section)
 }
 createCard()
-console.log(allPartyHalls);
