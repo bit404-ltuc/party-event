@@ -46,8 +46,11 @@ a {
 
 .card h1 {
     margin: 0;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    text-align: center;
 }
 
 .card p {
@@ -55,6 +58,8 @@ a {
     font-family: 'Open Sans';
     margin-top: 8px;
     line-height: 32px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
 }
 
 .card .tags {
@@ -69,6 +74,11 @@ a {
     margin-right: 8px;
     line-height: 24px;
     transition: all, var(--transition-time);
+}
+
+.card:hover .tags .tag {
+    background: var(--color);
+    color: white;
 }
 
 .card:hover .tags .tag {
@@ -105,8 +115,8 @@ a {
 }
 
 .card:hover {
-    color: white;
-    font-size: 25px;
+    color: rgb(255, 255, 255);
+    background-color: black;
 }
 
 .card:hover:before,
@@ -129,4 +139,10 @@ a {
 .info h1 {
     font-size: 16px;
     font-weight: normal;
+}
+
+.card:hover h1,
+.card:hover p {
+    color: rgb(255, 255, 255);
+    background-color: black;
 }
