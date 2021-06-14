@@ -67,7 +67,7 @@ function createCard() {
     for (let i = 0; i < allPartyHalls.length; i++) {
 
         let cardbox = `<div  class="cardbox">
-                    <a class="card" href="/pages/form.html?${allPartyHalls[i].id}" style="--bg-img: url(${allPartyHalls[i].imgPath})">
+                    <a class="card" href="/pages/form.html?${allPartyHalls[i].id-1}" style="--bg-img: url(${allPartyHalls[i].imgPath})">
                         <div>
                             <h1>${allPartyHalls[i].name}</h1>
                             <p>${allPartyHalls[i].description.slice(0, 50)}...</p>
