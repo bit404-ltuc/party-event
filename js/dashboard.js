@@ -1,3 +1,5 @@
+/* eslint-disable no-empty */
+/* eslint-disable no-undef */
 /* eslint-disable no-var */
 /* eslint-disable quotes */
 /* eslint-disable new-cap */
@@ -5,11 +7,16 @@
 /* eslint-disable semi */
 /* eslint-disable no-unused-vars */
 /* eslint-disable indent */
+let pass = prompt("enter password")
+if (pass !== "bit404") {
+    location.href = "/";
+
+}
 let divTable = document.getElementById("table")
 let tableTag = document.createElement("table")
 let arrHalls = JSON.parse(localStorage.getItem("Booking"))
 let PartyHalls = JSON.parse(localStorage.getItem("PartyHalls"))
-console.log(arrHalls);
+
 
 
 let html = "<h1>Booking Table </h1><table border='1|1'>";
