@@ -8,6 +8,9 @@
 body {
     overflow-x: hidden;
     font-family: Tahoma, Arial;
+    background-image: url("https://images.unsplash.com/photo-1516541196182-6bdb0516ed27?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80");
+
+
 }
 
 #myVideo {
@@ -127,10 +130,11 @@ body {
 /* connect us */
 
 .container {
-    width: 1000px;
+    width: 1200px;
     position: relative;
     display: flex;
     justify-content: space-between;
+    color: #6E6D6E;
 }
 
 .container .card {
@@ -166,10 +170,10 @@ body {
     opacity: 1;
 }
 
-.container .card .cover.closed h3 {
+.container .card .cover h3 {
     margin: 10px 0 0;
     padding: 0;
-    color: white;
+    color:#343f56    ;
     text-align: center;
     font-size: 1.5em;
 }
@@ -181,6 +185,7 @@ body {
     box-sizing: border-box;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
     transform: translateY(-100px);
+    border-radius: 50px;
 }
 
 .container .card:hover .cover.open {
@@ -199,6 +204,7 @@ body {
     border-top-right-radius: 8px;
     cursor: pointer;
     transition: 100ms linear;
+    border-radius: 100px;
 }
 
 .card_button a {
@@ -216,25 +222,30 @@ body {
 }
 
 .instagram {
-    background: #e1306c;
+    background: #f0e7b6 ;
+    border-radius: 50px;
+
 }
 
 .container .card:hover .cover.closed.instagram {
-    background: #ff6699;
+    background:#f0e7b6;
     transform: rotate(3deg);
 }
 
 .facebook {
-    background: rgb(5, 133, 192);
+    background: #f0e7b6 ;
+    border-radius: 50px;
 }
 
 .container .card:hover .cover.closed.facebook {
-    background: rgb(5, 133, 192);
+    background: #f0e7b6 ;
+
     transform: rotate(-2deg);
 }
 
 .whatsapp {
-    background: #0eb841;
+    background: #f0e7b6 ;
+    border-radius: 50px;
 }
 
 
@@ -675,13 +686,14 @@ body .container .card .box .content a:hover {
 /* card profile */
 
 #footer2 {
-    margin: 22px;
+    margin: 200px;
+    
     margin-top: 80px;
     box-sizing: border-box;
     height: 25%;
     clear: both;
     width: 100%;
-    height: 20%;
+
     display: inline-block;
 }
 
@@ -755,17 +767,20 @@ a:hover {
 }
 
 #p {
-    font-size: small;
+    font-size: medium;
     text-align: justify;
-    padding: 2px;
+    padding: 7px;
+    margin: 9px;
 }
-
+#name{
+    font-size: x-large;
+}
 
 /* .flip-card-front {} */
 
 .flip-card-back {
-    background-color: rgb(239, 183, 88);
-    color: rgb(255, 255, 255);
+    background-color: #DAE3E6;
+    color: rgba(23, 57, 92);;
     transform: rotateY(180deg);
     text-align: center;
     padding: 15px;
