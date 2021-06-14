@@ -1,3 +1,4 @@
+
 /* eslint-disable semi */
 /* eslint-disable new-cap */
 /* eslint-disable no-trailing-spaces */
@@ -33,6 +34,7 @@ if (window.location.search !== '') {
 
 
 
+
 function handleSubmitting(event) {
     event.preventDefault();
     let formData = event.target;
@@ -43,6 +45,7 @@ function handleSubmitting(event) {
     let date = formData.date.value;
     let time = formData.time.value;
     let quantity = formData.quantity.value;
+
     let radios = document.getElementsByName('provided');
     let confirmation = document.getElementsByName('Confirmation');
 
@@ -98,4 +101,5 @@ function savingBooking(fullName, emailAddress, phone1, phone2, date, time, quant
 function savingInLocal() {
     let convertedArr = JSON.stringify(allSavingBooking);
     localStorage.setItem('Booking', convertedArr);
+
 }
