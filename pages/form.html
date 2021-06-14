@@ -29,7 +29,9 @@
 
 
     <div id='form' style="width: 50%;">
-        <form action="SEND ADDRESS" id="booking" method="POST" accept-charset="UTF-8">
+
+        <form id="booking">
+
             <fieldset>
                 <legend>For Booking</legend>
                 <label>
@@ -67,11 +69,7 @@
                         <label for="time">Choose the right time to start the party</label>
                         <input class='inputFields' list="times" name="time" id="time">
                         <datalist id="times">
-                <option value="4:00pm-6:00pm">
-                <option value="7:00pm-9:00pm">
-                <option value="10:00pm-12:00am">
-                <option value="12:00am-2:00am">
-                <option value="another time">
+                
               </datalist>
 
                     </div>
@@ -97,11 +95,13 @@
                 <div class="inline">
                     <label>
 
-            <input   type="radio" name="Confirmation requested by" value="email" checked>
+
+            <input   type="radio" name="Confirmation" value="email" checked>
+
             Email
           </label>
                     <label>
-            <input  type="radio" name="Confirmation requested by" value="phone">
+            <input  type="radio" name="Confirmation" value="phone">
             Phone call
           </label>
                 </div>
@@ -109,7 +109,7 @@
 
                 <div class="btns">
 
-                    <input type="text" name="_gotcha" value="" style="display:none;">
+
                     <input type="submit" value="Submit request" class="submit">
 
                 </div>
@@ -119,18 +119,8 @@
     </div>
 
 
-
-
-
-
-
-
-    </fieldset>
-    </form>
-    </div>
     <section id="section1">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
 
     </section>
 
@@ -138,10 +128,12 @@
         <div class="footerleft">
             <h3>Party <span>Event</span></h3>
             <p class="footer-links">
-                <a href="/" class="link-1">Home</a>
-                <a href="#category">Category</a>
-                <a href="pages/partyhalls.html">Reservation</a>
-                <a href="pages/aboutus.html">About</a>
+
+                <a href="../index.html" class="link-1">Home</a>
+                <a href="../index.html#category">Category</a>
+                <a href="partyhalls.html">Reservation</a>
+                <a href="aboutus.html">About</a>
+
             </p>
             <p class="copyright">Hafla Team © 2021</p>
         </div>
@@ -165,8 +157,21 @@
 
 
 
+        <div class="footerright">
+            <p class="companyabout">
+                <span>About the company</span> A company specialized in preparing and booking graduation, wedding or birthday parties
+            </p>
 
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
     </footer>
+    <script src="../js/form.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
 </body>
