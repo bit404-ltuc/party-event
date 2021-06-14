@@ -112,3 +112,15 @@ function prevSlide() {
     currentSlide--;
     theChecker();
 }
+
+setInterval(function() {
+
+    document.querySelector('#pagintion-ul li.active').classList.remove('active');
+    document.querySelector('.slider-container img.active').classList.remove('active');
+    if (sliderImage.length == currentSlide) {
+        currentSlide = 1
+    } else { currentSlide++; }
+
+    theChecker();
+
+}, 3000);

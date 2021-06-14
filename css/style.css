@@ -845,6 +845,8 @@ article {
     position: absolute;
     top: 0px;
     margin-top: 100px;
+    font-size: 35px;
+    font-family: monospace;
 }
 
 input[type='radio']:checked:after {
@@ -865,4 +867,32 @@ label {
     font-size: 20px;
     font-family: 'Roboto Slab', serif;
     color: rgba(23, 57, 92);
+}
+
+
+/* table */
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#table {
+    margin: 30px 0px;
+}
+
+#table2 {
+    margin-top: 100px;
 }
