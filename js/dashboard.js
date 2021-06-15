@@ -8,7 +8,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable indent */
 let pass = prompt("enter password")
-if (pass !== "bit404") {
+if (pass !== "*******") {
     location.href = "/";
 
 }
