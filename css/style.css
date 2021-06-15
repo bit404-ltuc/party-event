@@ -9,8 +9,6 @@ body {
     overflow-x: hidden;
     font-family: Tahoma, Arial;
     background-image: url("https://images.unsplash.com/photo-1516541196182-6bdb0516ed27?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80");
-
-
 }
 
 #myVideo {
@@ -173,7 +171,7 @@ body {
 .container .card .cover h3 {
     margin: 10px 0 0;
     padding: 0;
-    color:#343f56    ;
+    color: #343f56;
     text-align: center;
     font-size: 1.5em;
 }
@@ -222,29 +220,27 @@ body {
 }
 
 .instagram {
-    background: #f0e7b6 ;
+    background: #f0e7b6;
     border-radius: 50px;
-
 }
 
 .container .card:hover .cover.closed.instagram {
-    background:#f0e7b6;
+    background: #f0e7b6;
     transform: rotate(3deg);
 }
 
 .facebook {
-    background: #f0e7b6 ;
+    background: #f0e7b6;
     border-radius: 50px;
 }
 
 .container .card:hover .cover.closed.facebook {
-    background: #f0e7b6 ;
-
+    background: #f0e7b6;
     transform: rotate(-2deg);
 }
 
 .whatsapp {
-    background: #f0e7b6 ;
+    background: #f0e7b6;
     border-radius: 50px;
 }
 
@@ -687,13 +683,11 @@ body .container .card .box .content a:hover {
 
 #footer2 {
     margin: 200px;
-    
     margin-top: 80px;
     box-sizing: border-box;
     height: 25%;
     clear: both;
     width: 100%;
-
     display: inline-block;
 }
 
@@ -772,15 +766,18 @@ a:hover {
     padding: 7px;
     margin: 9px;
 }
-#name{
+
+#name {
     font-size: x-large;
 }
+
 
 /* .flip-card-front {} */
 
 .flip-card-back {
     background-color: #DAE3E6;
-    color: rgba(23, 57, 92);;
+    color: rgba(23, 57, 92);
+    ;
     transform: rotateY(180deg);
     text-align: center;
     padding: 15px;
@@ -849,7 +846,6 @@ article {
     height: 300%;
     padding: 16px 32px;
     font-size: 20px;
-
 }
 
 #section1 {
@@ -864,8 +860,6 @@ article {
     font-size: 35px;
     font-family: monospace;
 }
-
-
 
 input[type='radio']:checked:after {
     width: 15px;
@@ -885,7 +879,6 @@ label {
     font-size: 20px;
     font-family: 'Roboto Slab', serif;
     color: rgba(23, 57, 92);
-
 }
 
 
@@ -914,5 +907,4 @@ tr:nth-child(even) {
 
 #table2 {
     margin-top: 100px;
-
 }
