@@ -42,24 +42,28 @@ a {
 
 .card:hover {
     transform: rotate(0);
+    /* background-color: rgb(3, 3, 3);
+    opacity: 0.9; */
 }
 
 .card h1 {
     margin: 0;
     font-size: 30px;
-    line-height: 20px;
-    background: rgba(255, 255, 255, 0.5);
+    line-height: 30px;
+    background: rgba(247, 247, 247, 0.829);
     border-radius: 10px;
     text-align: center;
+    font-weight: bold;
 }
 
 .card p {
     font-size: 20px;
     font-family: 'Open Sans';
     margin-top: 8px;
-    line-height: 32px;
-    background: rgba(255, 255, 255, 0.5);
+    line-height: 40px;
+    background: rgba(247, 247, 247, 0.829);
     border-radius: 10px;
+    font-weight: bold;
 }
 
 .card .tags {
@@ -68,21 +72,18 @@ a {
 
 .card .tags .tag {
     font-size: 18px;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgb(0, 90, 15);
+    color: #ccc;
     border-radius: 30px;
     padding: 0 8px;
     margin-right: 8px;
-    line-height: 24px;
+    line-height: 30px;
     transition: all, var(--transition-time);
+    font-weight: bold;
 }
 
 .card:hover .tags .tag {
-    background: var(--color);
-    color: white;
-}
-
-.card:hover .tags .tag {
-    background: var(--color);
+    background: rgb(0, 90, 15);
     color: white;
 }
 
@@ -116,7 +117,6 @@ a {
 
 .card:hover {
     color: rgb(255, 255, 255);
-    background-color: black;
 }
 
 .card:hover:before,
@@ -144,5 +144,5 @@ a {
 .card:hover h1,
 .card:hover p {
     color: rgb(255, 255, 255);
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
 }
