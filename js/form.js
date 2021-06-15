@@ -19,7 +19,7 @@ if (window.location.search !== '' && localHalls.length > Number(urlSearch) && Nu
 
     // window.location.search.substring(1)
     //let text = localHalls[urlSearch].description;
-    let text = `<div style = "text-align : center ;"> <h1 style = "margin-bottom : 20px">${localHalls[urlSearch].name}</h1> <p style = "margin-bottom : 20px">${localHalls[urlSearch].description}</p><h2>Cost : ${localHalls[urlSearch].cost}$</h2></div>`
+    let text = `<div id="decForm"  style = "text-align : center; color: rgba(23, 57, 92) "> <h1 style = "margin-bottom : 20px ;font-family: cursive;">${localHalls[urlSearch].name}</h1> <p style = "margin-bottom : 20px ;font-family: cursive;">${localHalls[urlSearch].description}</p><h2 style ="font-family: cursive;">Cost : ${localHalls[urlSearch].cost}$</h2></div>`
     document.getElementById("section1").innerHTML = text;
 
     let options = '';
@@ -32,7 +32,7 @@ if (window.location.search !== '' && localHalls.length > Number(urlSearch) && Nu
     document.getElementById('times').innerHTML = options;
 } else {
 
-    document.getElementById("bodyForm").innerHTML = "<div style = " + "'text-align : center ; '" + "> <h1 style = " + "font-size:60px;" + ">404</h1><p>Page Not Found  </p> </div>";
+    document.getElementById("bodyForm").innerHTML = `<div style = "text-align : center ; "> <h1 style = "font-size:60px;" >404</h1><p>Page Not Found  </p> </div>`;
 }
 
 
