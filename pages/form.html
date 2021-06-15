@@ -29,12 +29,12 @@
     </header>
 
 
-    <div id='form' style="width: 50%;">
+    <div id='form' style="width: 50%; ">
 
         <form id="booking">
 
             <fieldset>
-                <legend>For Booking</legend>
+
                 <label>
          full name
           <input class='inputFields' type="text" name="name" id="fullName" required>
@@ -82,7 +82,7 @@
 
 
                     <h3>The type of service provided</h3>
-                    <input type="radio" id="normal" name="provided" value="Normal">
+                    <input type="radio" id="normal" name="provided" value="Normal" checked>
                     <label for="normal">Normal</label>
                     <input type="radio" id="extra" name="provided" value="extra">
                     <label for="extra">Extra services</label>
@@ -96,13 +96,12 @@
                 <div class="inline">
                     <label>
 
-
-            <input   type="radio" name="Confirmation" value="email" checked>
+            <input   type="radio" name="Confirmation" value="email" >
 
             Email
           </label>
                     <label>
-            <input  type="radio" name="Confirmation" value="phone">
+            <input  type="radio" name="Confirmation" value="phone" checked>
             Phone call
           </label>
                 </div>
