@@ -9,6 +9,9 @@
 let time = ['2:00pm-4:00pm', '4:00pm-6:00pm', '6:00pm-8:00pm', '8:00pm-10:00pm', '10:00pm-12:00pm']
 let allPartyHalls = [];
 let id = 0;
+let urlSearch = window.location.search.substring(1);
+let localHalls = JSON.parse(localStorage.getItem("PartyHalls"))
+let arrNameHalls = ["Birthday", "Garduation", "weddings"]
 
 function newPartyHalls(name, imgPath, description, cost, address, type) {
     this.id = ++id
@@ -55,15 +58,20 @@ function savingPartyHalls() {
 
 function createCard() {
     let arrCard = JSON.parse(localStorage.getItem("PartyHalls"))
-    console.log(arrCard);
+
     let cc = document.getElementById("cc")
     let section = document.createElement("section")
     section.className = "maincard"
-    if (window.location.search !== '') {
-        allPartyHalls = allPartyHalls.filter(word => word.type === window.location.search.substring(1))
+    if (urlSearch !== '') {
+        allPartyHalls = allPartyHalls.filter(word => word.type === urlSearch)
     }
 
-    console.log(window.location.search);
+    if (!arrNameHalls.includes(urlSearch) && urlSearch !== '') {
+
+        document.getElementById("bodyParty").innerHTML = "<div style = " + "'text-align : center ; '" + "> <h1 style = " + "font-size:60px;" + ">404</h1><p>Page Not Found  </p> </div>";
+    }
+
+
     for (let i = 0; i < allPartyHalls.length; i++) {
 
         let cardbox = `<div  class="cardbox">
