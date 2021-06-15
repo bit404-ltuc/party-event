@@ -1,4 +1,3 @@
-
 /* eslint-disable semi */
 /* eslint-disable new-cap */
 /* eslint-disable no-trailing-spaces */
@@ -9,27 +8,31 @@
 /* eslint-disable indent */
 let btnSubmit = document.getElementById('booking');
 let allSavingBooking = [];
+let urlSearch = window.location.search.substring(1);
+let localHalls = JSON.parse(localStorage.getItem("PartyHalls"))
 if (localStorage.getItem('Booking') !== null) {
     allSavingBooking = JSON.parse(localStorage.getItem('Booking'));
 }
-console.log(allSavingBooking);
 
-if (window.location.search !== '') {
+
+if (window.location.search !== '' && localHalls.length > Number(urlSearch) && Number(urlSearch) > -1) {
+
     // window.location.search.substring(1)
-    let text = JSON.parse(localStorage.getItem("PartyHalls"))[window.location.search.substring(1)].description;
-    document.getElementById("section1").textContent = text;
+    //let text = localHalls[urlSearch].description;
+    let text = `<div style = "text-align : center ;"> <h1 style = "margin-bottom : 20px">${localHalls[urlSearch].name}</h1> <p style = "margin-bottom : 20px">${localHalls[urlSearch].description}</p><h2>Cost : ${localHalls[urlSearch].cost}$</h2></div>`
+    document.getElementById("section1").innerHTML = text;
 
     let options = '';
-    let list = JSON.parse(localStorage.getItem("PartyHalls"))[window.location.search.substring(1)].dates
-    console.log(list);
+    let list = localHalls[urlSearch].dates
+
     for (let i = 0; i < list.length; i++) {
         options += '<option value="' + list[i] + '" />';
     }
-    console.log(options);
+
     document.getElementById('times').innerHTML = options;
 } else {
 
-    document.getElementById("section1").textContent = "nothing";
+    document.getElementById("bodyForm").innerHTML = "<div style = " + "'text-align : center ; '" + "> <h1 style = " + "font-size:60px;" + ">404</h1><p>Page Not Found  </p> </div>";
 }
 
 
@@ -61,7 +64,7 @@ function handleSubmitting(event) {
             break;
         }
     }
-    console.log(confirmation, radios);
+
     new savingBooking(fullName, emailAddress, phone1, phone2, date, time, quantity, radios, confirmation);
 
 
