@@ -610,10 +610,11 @@ body .container1 .card .box .content a:hover {
     display: block;
     top: 1em;
     width: 80%;
-    font-size: 3em;
-    animation-duration: 15s;
+    font-size: 37px;
+    animation-duration: 20s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+    font-family: cursive;
 }
 
 .item-1 {
