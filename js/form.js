@@ -1,4 +1,3 @@
-
 /* eslint-disable semi */
 /* eslint-disable new-cap */
 /* eslint-disable no-trailing-spaces */
