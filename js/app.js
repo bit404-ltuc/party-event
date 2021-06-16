@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-var */
 /* eslint-disable quotes */
 /* eslint-disable new-cap */
