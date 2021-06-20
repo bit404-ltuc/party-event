@@ -128,20 +128,22 @@ body {
 /* connect us */
 
 .container {
-    width: 1200px;
+    width: 1130px;
     position: relative;
     display: flex;
     justify-content: space-between;
     color: #6E6D6E;
+    margin-left: 130px;
 }
 
 .container .card {
     position: relative;
+    margin-right: 30px;
 }
 
 .container .card .cover {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     transition: 0.5s;
 }
 
@@ -151,7 +153,10 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 1;
-    transform: translateY(200px);
+    transform: translateY(150px);
+    border-radius: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .container .card:hover .cover.closed {
@@ -198,11 +203,9 @@ body {
     align-items: center;
     width: 100%;
     background: #343f56;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
     cursor: pointer;
     transition: 100ms linear;
-    border-radius: 100px;
+    border-radius: 0px 0px 30px 30px;
 }
 
 .card_button a {
@@ -220,27 +223,27 @@ body {
 }
 
 .instagram {
-    background: #f0e7b6;
+    background: #eed66d;
     border-radius: 50px;
 }
 
 .container .card:hover .cover.closed.instagram {
-    background: #f0e7b6;
+    background: #eed66d;
     transform: rotate(3deg);
 }
 
 .facebook {
-    background: #f0e7b6;
+    background: #eed66d;
     border-radius: 50px;
 }
 
 .container .card:hover .cover.closed.facebook {
-    background: #f0e7b6;
+    background: #eed66d;
     transform: rotate(-2deg);
 }
 
 .whatsapp {
-    background: #f0e7b6;
+    background: #eed66d;
     border-radius: 50px;
 }
 
@@ -484,7 +487,7 @@ li a:hover::before {
 
 /* card */
 
-body .container {
+body .container1 {
     color: rgb(218, 216, 216);
     display: flex;
     justify-content: center;
@@ -493,11 +496,11 @@ body .container {
     max-width: 100%;
     margin: 40px 0;
     flex-wrap: nowrap;
-    margin-left: 169px;
+    margin-left: 0px;
     position: relative;
 }
 
-body .container .card {
+body .container1 .card {
     position: relative;
     min-width: 320px;
     height: 440px;
@@ -507,29 +510,29 @@ body .container .card {
     text-align: center;
 }
 
-body .container .card:hover {
+body .container1 .card:hover {
     box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset 5px 5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), 5px 5px 15px rgba(255, 255, 255, 0.1);
 }
 
-body .container .card h3 {
+body .container1 .card h3 {
     margin-top: 115%;
     font-size: xx-large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-body .container .card:nth-child(1) .box .content a {
+body .container1 .card:nth-child(1) .box .content a {
     background: #2196f3;
 }
 
-body .container .card:nth-child(2) .box .content a {
+body .container1 .card:nth-child(2) .box .content a {
     background: #e91e63;
 }
 
-body .container .card:nth-child(3) .box .content a {
+body .container1 .card:nth-child(3) .box .content a {
     background: #23c186;
 }
 
-body .container .card .box {
+body .container1 .card .box {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -543,11 +546,11 @@ body .container .card .box {
     transition: 0.5s;
 }
 
-body .container .card .box:hover {
+body .container1 .card .box:hover {
     transform: translateY(-50px);
 }
 
-body .container .card .box:before {
+body .container1 .card .box:before {
     content: "";
     position: absolute;
     top: 0;
@@ -557,12 +560,12 @@ body .container .card .box:before {
     background: rgba(255, 255, 255, 0.03);
 }
 
-body .container .card .box .content {
+body .container1 .card .box .content {
     padding: 20px;
     text-align: center;
 }
 
-body .container .card .box .content img {
+body .container1 .card .box .content img {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -570,7 +573,7 @@ body .container .card .box .content img {
     height: 100%;
 }
 
-body .container .card .box .content a {
+body .container1 .card .box .content a {
     position: relative;
     display: inline-block;
     padding: 8px 20px;
@@ -584,7 +587,7 @@ body .container .card .box .content a {
     margin-top: 250px;
 }
 
-body .container .card .box .content a:hover {
+body .container1 .card .box .content a:hover {
     background: #fff;
     color: #000;
 }
@@ -683,26 +686,28 @@ body .container .card .box .content a:hover {
 /* card profile */
 
 #footer2 {
-    margin: 200px;
+    margin: 20px;
     margin-top: 80px;
     box-sizing: border-box;
     height: 25%;
     clear: both;
     width: 100%;
     display: inline-block;
+    border-radius: 20%;
 }
 
 #footer2 .card {
     box-sizing: border-box;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 200px;
-    height: 250px;
-    margin: auto;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    width: 270px;
+    /* width: 200px;
+    height: 250px; */
     text-align: center;
     font-family: arial;
     padding: 0px;
     margin: 30px;
     display: inline-block;
+    border-radius: 20%;
 }
 
 button {
@@ -716,7 +721,7 @@ button {
     cursor: pointer;
     font-size: 20px;
     border-radius: 8px;
-    width: 100%;
+    width: 270px;
 }
 
 button a {
@@ -731,9 +736,10 @@ a:hover {
 
 .flip-card {
     background-color: transparent;
-    width: 200px;
-    height: 220px;
+    width: 270px;
+    height: 350px;
     perspective: 1000px;
+    border-radius: 20%;
 }
 
 .flip-card-inner {
@@ -743,7 +749,7 @@ a:hover {
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(3, 3, 3, 0.2);
+    border-radius: 20%;
 }
 
 .flip-card:hover .flip-card-inner {
@@ -757,32 +763,31 @@ a:hover {
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    background-color: white;
-    height: 215px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20%;
 }
 
 #p {
-    font-size: medium;
+    font-size: xx-large;
     text-align: justify;
     padding: 7px;
     margin: 9px;
 }
 
 #name {
-    font-size: x-large;
+    font-size: 30px;
 }
 
 
 /* .flip-card-front {} */
 
 .flip-card-back {
-    background-color: #DAE3E6;
+    background-color: #dae3e600;
     color: rgba(23, 57, 92);
-    ;
     transform: rotateY(180deg);
     text-align: center;
-    padding: 15px;
-    font-size: small;
+    padding: 30px;
+    font-size: 20px;
 }
 
 #img {
@@ -799,7 +804,7 @@ article {
     font-family: 'Noto Sans', sans-serif;
     box-sizing: border-box;
     border-style: ridge;
-    width: 75%;
+    width: 60%;
     margin: 40px;
     padding: 20px;
     background-color: rgba(149, 223, 215, 0.5);
@@ -859,6 +864,7 @@ article {
     margin-top: 100px;
     font-size: 35px;
     font-family: monospace;
+    text-align: center;
 }
 
 fieldset {
